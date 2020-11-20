@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Minesweeper</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="m-4 d-flex justify-content-around header">
+        <div class="score blue-pill rounded-pill">
+          🚩<span id="score">000</span>
+        </div>
+      </div>
+      <div class="gameContainer" id="gameContainer"></div>
+      <div class="gameOverContainer hide center" id="gameOverContainer">
+        <div class="gameOver">
+          <h3 class="yourScore">Your Score : <span id="totalScore"></span></h3>
+          <button class="btn replay" onclick="startNewGame()">Replay</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
